@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F2A1CBD1863CE95005CABD3 /* wvumlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F2A1CBC1863CE95005CABD3 /* wvumlogo.png */; };
 		3F86A5C81860F5C0009C95CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F86A5C71860F5C0009C95CE /* Foundation.framework */; };
 		3F86A5CA1860F5C0009C95CE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F86A5C91860F5C0009C95CE /* CoreGraphics.framework */; };
 		3F86A5CC1860F5C0009C95CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F86A5CB1860F5C0009C95CE /* UIKit.framework */; };
@@ -21,6 +22,10 @@
 		3F86A5E91860F5C0009C95CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F86A5CB1860F5C0009C95CE /* UIKit.framework */; };
 		3F86A5F11860F5C0009C95CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F86A5EF1860F5C0009C95CE /* InfoPlist.strings */; };
 		3F86A5F31860F5C0009C95CE /* WVUMPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F86A5F21860F5C0009C95CE /* WVUMPlayerTests.m */; };
+		3F86A60318610927009C95CE /* wvumpic.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F86A60218610927009C95CE /* wvumpic.png */; };
+		3F86A60618610A25009C95CE /* stopbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F86A60418610A25009C95CE /* stopbutton.png */; };
+		3F86A60718610A25009C95CE /* startbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F86A60518610A25009C95CE /* startbutton.png */; };
+		3F86A60A1862A544009C95CE /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F86A6091862A544009C95CE /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3F86A5C41860F5C0009C95CE /* WVUMPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WVUMPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F2A1CBC1863CE95005CABD3 /* wvumlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wvumlogo.png; sourceTree = "<group>"; };
+		3F86A5C41860F5C0009C95CE /* WVUM 90.5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WVUM 90.5.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F86A5C71860F5C0009C95CE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3F86A5C91860F5C0009C95CE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		3F86A5CB1860F5C0009C95CE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -53,6 +59,11 @@
 		3F86A5EE1860F5C0009C95CE /* WVUMPlayerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WVUMPlayerTests-Info.plist"; sourceTree = "<group>"; };
 		3F86A5F01860F5C0009C95CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3F86A5F21860F5C0009C95CE /* WVUMPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WVUMPlayerTests.m; sourceTree = "<group>"; };
+		3F86A60218610927009C95CE /* wvumpic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wvumpic.png; sourceTree = "<group>"; };
+		3F86A60418610A25009C95CE /* stopbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopbutton.png; sourceTree = "<group>"; };
+		3F86A60518610A25009C95CE /* startbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startbutton.png; sourceTree = "<group>"; };
+		3F86A6081862A544009C95CE /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		3F86A6091862A544009C95CE /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +103,7 @@
 		3F86A5C51860F5C0009C95CE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3F86A5C41860F5C0009C95CE /* WVUMPlayer.app */,
+				3F86A5C41860F5C0009C95CE /* WVUM 90.5.app */,
 				3F86A5E51860F5C0009C95CE /* WVUMPlayerTests.xctest */,
 			);
 			name = Products;
@@ -112,6 +123,8 @@
 		3F86A5CD1860F5C0009C95CE /* WVUMPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				3F86A6081862A544009C95CE /* Reachability.h */,
+				3F86A6091862A544009C95CE /* Reachability.m */,
 				3F86A5D61860F5C0009C95CE /* RKAppDelegate.h */,
 				3F86A5D71860F5C0009C95CE /* RKAppDelegate.m */,
 				3F86A5D91860F5C0009C95CE /* Main.storyboard */,
@@ -126,6 +139,10 @@
 		3F86A5CE1860F5C0009C95CE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3F2A1CBC1863CE95005CABD3 /* wvumlogo.png */,
+				3F86A60418610A25009C95CE /* stopbutton.png */,
+				3F86A60518610A25009C95CE /* startbutton.png */,
+				3F86A60218610927009C95CE /* wvumpic.png */,
 				3F86A5CF1860F5C0009C95CE /* WVUMPlayer-Info.plist */,
 				3F86A5D01860F5C0009C95CE /* InfoPlist.strings */,
 				3F86A5D31860F5C0009C95CE /* main.m */,
@@ -169,7 +186,7 @@
 			);
 			name = WVUMPlayer;
 			productName = WVUMPlayer;
-			productReference = 3F86A5C41860F5C0009C95CE /* WVUMPlayer.app */;
+			productReference = 3F86A5C41860F5C0009C95CE /* WVUM 90.5.app */;
 			productType = "com.apple.product-type.application";
 		};
 		3F86A5E41860F5C0009C95CE /* WVUMPlayerTests */ = {
@@ -231,7 +248,11 @@
 			files = (
 				3F86A5E01860F5C0009C95CE /* Images.xcassets in Resources */,
 				3F86A5D21860F5C0009C95CE /* InfoPlist.strings in Resources */,
+				3F86A60718610A25009C95CE /* startbutton.png in Resources */,
+				3F86A60618610A25009C95CE /* stopbutton.png in Resources */,
+				3F86A60318610927009C95CE /* wvumpic.png in Resources */,
 				3F86A5DB1860F5C0009C95CE /* Main.storyboard in Resources */,
+				3F2A1CBD1863CE95005CABD3 /* wvumlogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +273,7 @@
 			files = (
 				3F86A5D41860F5C0009C95CE /* main.m in Sources */,
 				3F86A5D81860F5C0009C95CE /* RKAppDelegate.m in Sources */,
+				3F86A60A1862A544009C95CE /* Reachability.m in Sources */,
 				3F86A5DE1860F5C0009C95CE /* RKViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,10 +401,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/rkrish/Documents/XCodeWork/WVUMPlayer,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WVUMPlayer/WVUMPlayer-Prefix.pch";
 				INFOPLIST_FILE = "WVUMPlayer/WVUMPlayer-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "WVUM 90.5";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -392,10 +418,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/rkrish/Documents/XCodeWork/WVUMPlayer,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WVUMPlayer/WVUMPlayer-Prefix.pch";
 				INFOPLIST_FILE = "WVUMPlayer/WVUMPlayer-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "WVUM 90.5";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -461,6 +491,7 @@
 				3F86A5F81860F5C0009C95CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F86A5F91860F5C0009C95CE /* Build configuration list for PBXNativeTarget "WVUMPlayerTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +500,7 @@
 				3F86A5FB1860F5C0009C95CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

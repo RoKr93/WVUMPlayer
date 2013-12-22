@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3F86A5C31860F5C0009C95CE"
-               BuildableName = "WVUMPlayer.app"
+               BuildableName = "WVUM 90.5.app"
                BlueprintName = "WVUMPlayer"
                ReferencedContainer = "container:WVUMPlayer.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3F86A5C31860F5C0009C95CE"
-            BuildableName = "WVUMPlayer.app"
+            BuildableName = "WVUM 90.5.app"
             BlueprintName = "WVUMPlayer"
             ReferencedContainer = "container:WVUMPlayer.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3F86A5C31860F5C0009C95CE"
-            BuildableName = "WVUMPlayer.app"
+            BuildableName = "WVUM 90.5.app"
             BlueprintName = "WVUMPlayer"
             ReferencedContainer = "container:WVUMPlayer.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3F86A5C31860F5C0009C95CE"
-            BuildableName = "WVUMPlayer.app"
+            BuildableName = "WVUM 90.5.app"
             BlueprintName = "WVUMPlayer"
             ReferencedContainer = "container:WVUMPlayer.xcodeproj">
          </BuildableReference>
