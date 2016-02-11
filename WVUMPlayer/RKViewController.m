@@ -19,11 +19,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     isPlaying = NO;
-    player = [[MPMoviePlayerController alloc] initWithContentURL:[NSURL URLWithString:@"http://www.wvum.org/listen.pls"]];
-    player.movieSourceType = MPMovieSourceTypeStreaming;
-    player.view.hidden = YES;
-    player.useApplicationAudioSession = NO;
-    [self.view addSubview:player.view];
+    self.audioPlayer = [[AVPlayer alloc] initWithURL:[NSURL URLWithString:@"http://www.wvum.org:9010/stream"]];
     currentInfo.numberOfLines = 0;
     CGSize labelSize = [currentInfo.text sizeWithFont:currentInfo.font
                               constrainedToSize:currentInfo.frame.size
@@ -50,7 +46,7 @@
 -(void)loadCurrentInfo{
     //grab HTML code from web player.
     NSError *error = nil;
-    NSString *html = [NSString stringWithContentsOfURL:[NSURL URLWithString:@"http://wvum.org/index.php/wvum/stream/"] encoding:NSASCIIStringEncoding error:&error];
+    NSString *html = [NSString stringWithContentsOfURL:[NSURL URLWithString:@"http://www.wvum.org/web-player/"] encoding:NSASCIIStringEncoding error:&error];
     
     //get string that contains artist name and song name.
     NSScanner *stringScanner = [NSScanner scannerWithString:html];
@@ -76,6 +72,7 @@
     }
     
     currentInfo.text = printedContent;
+    [self.view setNeedsDisplay];
 }
 
 - (void)didReceiveMemoryWarning
@@ -87,9 +84,12 @@
 -(IBAction)startButtonPressed:(id)sender{
     //if not already playing, begin streaming.
     if([self connected] && !isPlaying){
-        currentInfo.text = @"loading...";
         isPlaying = YES;
-        [player play];
+        
+        // this should always happen, but check anyway I suppose
+        if(self.audioPlayer)
+            [self.audioPlayer play];
+        
         [self loadCurrentInfo];
     }
 }
@@ -98,7 +98,13 @@
     //if already playing, stop streaming.
     if([self connected] && isPlaying){
         isPlaying = NO;
-        [player stop];
+        
+        // this is super dumb, but AVPlayers don't have a stop method. So we pause, destroy the
+        // object, then re-create it. Re-creation is done here so there's minimal delay when we
+        // press start again.
+        [self.audioPlayer pause];
+        self.audioPlayer = nil;
+        self.audioPlayer = [[AVPlayer alloc] initWithURL:[NSURL URLWithString:@"http://www.wvum.org:9010/stream"]];
     }
 }
 

@@ -7,12 +7,17 @@
 //
 
 #import "RKAppDelegate.h"
+#import <AVFoundation/AVFoundation.h>
 
 @implementation RKAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [[AVAudioSession sharedInstance] setDelegate:self];
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
+    [[AVAudioSession sharedInstance] setActive:YES error:nil];
+    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
     return YES;
 }
 							
@@ -26,6 +31,8 @@
 {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:NULL];
+    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application

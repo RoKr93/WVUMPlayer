@@ -26,6 +26,10 @@
 		3F86A60618610A25009C95CE /* stopbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F86A60418610A25009C95CE /* stopbutton.png */; };
 		3F86A60718610A25009C95CE /* startbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F86A60518610A25009C95CE /* startbutton.png */; };
 		3F86A60A1862A544009C95CE /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F86A6091862A544009C95CE /* Reachability.m */; };
+		3F968F921C6C2DEC00F0F62D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F968F911C6C2DEC00F0F62D /* AVFoundation.framework */; };
+		3F968F941C6C4C2D00F0F62D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F968F931C6C4C2D00F0F62D /* LaunchScreen.storyboard */; };
+		3FADF4221C6CDBF9001AB224 /* wvumicon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FADF4211C6CDBF9001AB224 /* wvumicon120.png */; };
+		3FADF4241C6CDE6C001AB224 /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FADF4231C6CDE6C001AB224 /* Images-2.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +68,10 @@
 		3F86A60518610A25009C95CE /* startbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startbutton.png; sourceTree = "<group>"; };
 		3F86A6081862A544009C95CE /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		3F86A6091862A544009C95CE /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		3F968F911C6C2DEC00F0F62D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3F968F931C6C4C2D00F0F62D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3FADF4211C6CDBF9001AB224 /* wvumicon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wvumicon120.png; sourceTree = "<group>"; };
+		3FADF4231C6CDE6C001AB224 /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F968F921C6C2DEC00F0F62D /* AVFoundation.framework in Frameworks */,
 				3F86A5CA1860F5C0009C95CE /* CoreGraphics.framework in Frameworks */,
 				3F86A5CC1860F5C0009C95CE /* UIKit.framework in Frameworks */,
 				3F86A5C81860F5C0009C95CE /* Foundation.framework in Frameworks */,
@@ -112,6 +121,7 @@
 		3F86A5C61860F5C0009C95CE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3F968F911C6C2DEC00F0F62D /* AVFoundation.framework */,
 				3F86A5C71860F5C0009C95CE /* Foundation.framework */,
 				3F86A5C91860F5C0009C95CE /* CoreGraphics.framework */,
 				3F86A5CB1860F5C0009C95CE /* UIKit.framework */,
@@ -128,9 +138,11 @@
 				3F86A5D61860F5C0009C95CE /* RKAppDelegate.h */,
 				3F86A5D71860F5C0009C95CE /* RKAppDelegate.m */,
 				3F86A5D91860F5C0009C95CE /* Main.storyboard */,
+				3F968F931C6C4C2D00F0F62D /* LaunchScreen.storyboard */,
 				3F86A5DC1860F5C0009C95CE /* RKViewController.h */,
 				3F86A5DD1860F5C0009C95CE /* RKViewController.m */,
 				3F86A5DF1860F5C0009C95CE /* Images.xcassets */,
+				3FADF4231C6CDE6C001AB224 /* Images-2.xcassets */,
 				3F86A5CE1860F5C0009C95CE /* Supporting Files */,
 			);
 			path = WVUMPlayer;
@@ -140,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				3F2A1CBC1863CE95005CABD3 /* wvumlogo.png */,
+				3FADF4211C6CDBF9001AB224 /* wvumicon120.png */,
 				3F86A60418610A25009C95CE /* stopbutton.png */,
 				3F86A60518610A25009C95CE /* startbutton.png */,
 				3F86A60218610927009C95CE /* wvumpic.png */,
@@ -217,6 +230,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Roshan Krishnan";
 				TargetAttributes = {
+					3F86A5C31860F5C0009C95CE = {
+						DevelopmentTeam = 6769E68V5L;
+					};
 					3F86A5E41860F5C0009C95CE = {
 						TestTargetID = 3F86A5C31860F5C0009C95CE;
 					};
@@ -247,11 +263,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F86A5E01860F5C0009C95CE /* Images.xcassets in Resources */,
+				3F968F941C6C4C2D00F0F62D /* LaunchScreen.storyboard in Resources */,
 				3F86A5D21860F5C0009C95CE /* InfoPlist.strings in Resources */,
+				3FADF4221C6CDBF9001AB224 /* wvumicon120.png in Resources */,
 				3F86A60718610A25009C95CE /* startbutton.png in Resources */,
 				3F86A60618610A25009C95CE /* stopbutton.png in Resources */,
 				3F86A60318610927009C95CE /* wvumpic.png in Resources */,
 				3F86A5DB1860F5C0009C95CE /* Main.storyboard in Resources */,
+				3FADF4241C6CDE6C001AB224 /* Images-2.xcassets in Resources */,
 				3F2A1CBD1863CE95005CABD3 /* wvumlogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,6 +420,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/rkrish/Documents/XCodeWork/WVUMPlayer,
@@ -408,7 +429,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WVUMPlayer/WVUMPlayer-Prefix.pch";
 				INFOPLIST_FILE = "WVUMPlayer/WVUMPlayer-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wvum.player;
 				PRODUCT_NAME = "WVUM 90.5";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -418,6 +441,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/rkrish/Documents/XCodeWork/WVUMPlayer,
@@ -425,7 +450,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WVUMPlayer/WVUMPlayer-Prefix.pch";
 				INFOPLIST_FILE = "WVUMPlayer/WVUMPlayer-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wvum.player;
 				PRODUCT_NAME = "WVUM 90.5";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

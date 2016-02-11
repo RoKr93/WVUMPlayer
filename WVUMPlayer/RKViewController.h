@@ -10,6 +10,7 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import "Reachability.h"
 #import <SystemConfiguration/SystemConfiguration.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface RKViewController : UIViewController{
     IBOutlet UIButton *playMusic;
@@ -18,8 +19,11 @@
     IBOutlet UILabel *currentInfo;
     MPMoviePlayerController *player;
     
-    BOOL *isPlaying;
+    BOOL isPlaying;
 }
+
+@property (nonatomic) AVPlayer *audioPlayer;
+
 -(IBAction)startButtonPressed:(id)sender;
 -(IBAction)stopButtonPressed:(id)sender;
 -(IBAction)infoButtonPressed:(id)sender;
